@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --color1: #181818;
+  --color2: #1d4ed8;
+  --color3: #25274d;
+  --color4: #27272a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: var(--white);
+}
+
+body {
+  background: var(--color1);
+  letter-spacing: 1px;
+}
+
+/* -----HEADER----- */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+  height: 100px;
+}
+
+/* header .logo img {
+  width: 80px;
+  height: 100%;
+} */
+
+header .logo h1 {
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--white);
+  font-weight: bold;
+  text-shadow: 2px 2px 1px var(--color2);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-menu .nav-item .nav-link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+}
+
+.nav-menu .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  height: 3px;
+  width: 0;
+  background: var(--color2);
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+
+.nav-menu .nav-item .nav-link:hover {
+  text-shadow: 2px 2px 1px var(--color2);
+}
+
+.nav-menu .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 30px;
+  border-radius: 15px;
+  height: 5px;
+  margin: 5px 0;
+  background: var(--white);
+  transition: all 0.5s ease;
+}
+
+/* -----ABOUT SECTION----- */
+.container {
+  padding: 5rem;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.content .about {
+  flex: 1;
+  max-width: calc(50% - 2rem);
+}
+
+.content .about h1 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4rem;
+  text-align: left;
+}
+
+.content .about h1 span {
+  animation: flicker 5s infinite;
+}
+
+.content .about p {
+  font-size: 18px;
+}
+
+.content .about p {
+  text-align: left;
+}
+
+.content .image {
+  position: relative;
+  animation: float 5s infinite;
+}
+
+.content .image img {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  filter: drop-shadow(3px 3px 1px var(--white));
+}
+
+/* -----TECH STACK SECTION----- */
+.container .title {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent 60%,
+    var(--color2) 60%,
+    var(--color2)
+  );
+  background-size: 100% 100%;
+  display: inline-block;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.skills .tech {
+  text-align: center;
+  flex: calc(16.666% - 2rem);
+  margin-bottom: 2rem;
+  background-color: var(--color3);
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 1px var(--color4);
+}
+
+.skills img {
+  width: 60px;
+  height: 60px;
+}
+
+.skills img:hover {
+  transform: scale(1.1);
+}
+
+/* -----PROJECTS SECTION----- */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 500px;
+  padding: 20px;
+  margin: 5px;
+  background: var(--color3);
+  box-shadow: 3px 3px 1px var(--color4);
+  border: 3px solid transparent;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.card:hover {
+  border: 3px solid var(--white);
+  box-shadow: 3px 3px 1px var(--white);
+}
+
+.card img {
+  max-width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  margin: 10px auto;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card .tech-stack {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.card .tech-stack img {
+  max-width: 35px;
+  height: auto;
+  margin: 0 5px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: var(--white);
+  margin: 20px 0;
+}
+
+.card a {
+  color: var(--color2);
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.card .btn-link {
+  background: var(--color2);
+  outline: none;
+  border: none;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: all 0.5s ease;
+}
+
+.card .btn-link:hover {
+  transform: scale(1.1);
+}
+
+/* -----FOOTER----- */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.contact-info h1 {
+  text-align: center;
+  margin: 20px;
+  background-image: linear-gradient(
+    180deg,
+    transparent 60%,
+    var(--color2) 60%,
+    var(--color2)
+  );
+  background-size: 100% 100%;
+  display: inline-block;
+}
+
+.contact-info p {
+  max-width: 600px;
+  margin: 20px;
+  text-align: center;
+}
+
+.contact-info a {
+  text-decoration: none;
+  background-color: var(--color2);
+  color: var(--white);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto;
+  gap: 10px;
+  width: 250px;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+.contact-info a:hover {
+  transform: scale(1.1);
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 30px;
+}
+
+.social-icons a:hover {
+  filter: drop-shadow(2px 2px 1px var(--color2));
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* -----KEYFRAMES----- */
+@keyframes flicker {
+  0% {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px var(--color2);
+  }
+  50% {
+    -webkit-text-fill-color: var(--color2);
+    -webkit-text-stroke: none;
+    text-shadow: 3px 3px 1px var(--white);
+  }
+  100% {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px var(--color2);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-2.5rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* -----BREAK POINTS----- */
+@media (max-width: 1200px) {
+  header .logo h1 {
+    font-size: 2rem;
+  }
+
+  .nav-menu .nav-item .nav-link {
+    font-size: 20px;
+  }
+
+  .card {
+    width: 450px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .content .about {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .line:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .hamburger.active .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    background-color: transparent;
+    width: 100%;
+    z-index: 1;
+    backdrop-filter: blur(100px);
+    border: 1px solid var(--white);
+  }
+
+  .nav-menu.active {
+    display: block;
+  }
+
+  .nav-menu .nav-item {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .skills .tech {
+    flex: calc(30% - 1rem);
+  }
+
+  .skills .tech h5 {
+    font-size: 14px;
+  }
+
+  .wrapper {
+    gap: 10px;
+  }
+
+  .card {
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content .about h1 {
+    font-size: 3rem;
+  }
+
+  .content .about p {
+    font-size: 16px;
+  }
+
+  .content .image img {
+    max-width: 400px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  header {
+    padding: 0 2rem;
+  }
+
+  .container {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 462px) {
+  .content .about h1 {
+    font-size: 2.5rem;
+  }
+
+  .content .about p {
+    font-size: 15px;
+  }
+
+  .content .image img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 371px) {
+  .skills .tech {
+    flex: calc(50% - 1rem);
+  }
+}
