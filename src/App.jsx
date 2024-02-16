@@ -4,6 +4,7 @@ import "boxicons";
 import ScrollReveal from "scrollreveal";
 import { techStackData, projectsData } from "./data";
 import ichanImg from "./assets/images/ichan.png";
+import logoImg from "./assets/images/logo.png";
 
 function App() {
   const [expandedCards, setExpandedCards] = useState([]);
@@ -70,8 +71,8 @@ function App() {
     <>
       <header>
         <div className="logo">
-          {/* <img src={logoImg} alt="logo" /> */}
-          <h1>Ichan</h1>
+          <img src={logoImg} alt="logo" />
+          {/* <h1>Ichan</h1> */}
         </div>
         <nav className="nav-bar">
           <ul className="nav-menu">
