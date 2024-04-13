@@ -63,7 +63,7 @@ export const projectsData = [
     desc: "The Rose-G E-Commerce Website lets you effortlessly check out and order your preferred food. It's easy to use, safe for payments, and guarantees a smooth online ordering experience, delivering Rose-G's delicious offerings right to your door.",
     techStack: [reactImg, reduxImg, firebaseImg, cssImg, paymongoImg],
     btnTitle: "View",
-    url: "https://www.rosegspecialpalabok.com",
+    url: "https://rose-g-2537e.web.app/",
   },
 
   {
