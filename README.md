@@ -2,7 +2,7 @@
 
 A personal portfolio project built using **React + Vite**.
 
-This repository is mainly for portfolio purposes and as a reference so I can easily run the project again in the future.
+This repository is mainly for portfolio purposes.
 
 ## Tech Stack
 - React
