@@ -15,19 +15,19 @@ This repository is mainly for portfolio purposes and as a reference so I can eas
 Follow these steps to run the project locally.
 
 #1. Clone the repository
-cmd: git clone <repository-url>
+- cmd: git clone <repository-url>
 
 #2. Navigate to the project folder
-cmd: cd <project-folder-name>
+- cmd: cd <project-folder-name>
 
 #3. Install dependencies
-cmd: npm install
+- cmd: npm install
 
 #4. Start the development server
-cmd: npm run dev
+- cmd: npm run dev
 
 ## If the project has issues running:
--Delete node_modules
--Run npm install again
+- Delete node_modules
+- Run npm install again
 
 
