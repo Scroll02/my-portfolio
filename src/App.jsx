@@ -112,12 +112,10 @@ function App() {
           <div className="content">
             <div className="about">
               <h1>
-                Hi, I'm <span>Ichan</span>, Aspiring Web Developer
+                Hi, I'm <span>Ichan</span>
               </h1>
               <p>
-                I create sleek and user-friendly websites that blend form and
-                function seamlessly. With a passion for coding and a knack for
-                problem-solving, I bring a fresh perspective to web development.
+               A tech professional with a strong interest in web development. I work across IT support and web projects, focusing on practical solutions, problem-solving, and clean, user-friendly experiences.
               </p>
             </div>
             <div className="image">
@@ -240,7 +238,7 @@ function App() {
               ></box-icon>
             </a>
           </div>
-          <p className="copyright">2023 | Christian Joel Banquito</p>
+          <p className="copyright">2026 | Christian Joel Banquito</p>
         </footer>
       </main>
     </>
